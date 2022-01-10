@@ -1,0 +1,25 @@
+
+
+.icon-paragraph {
+    @include custom-flex-container(space-between, flex-start, column, nowrap);
+    height: auto;
+    max-width: 270px;
+}
+
+.icon-paragraph__icon {
+    padding: 25px 100px;
+    background-color: $filter-cl;
+    margin-bottom: 10px;
+}
+
+
+.icon-paragraph__title {
+    @include custom-text(14px, bold, 16px, $main-txt-cl, left);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.icon-paragraph__text {
+    @include custom-text(14px, normal, 24px, $second-txt-cl, left);
+    letter-spacing: 0.03em;
+}

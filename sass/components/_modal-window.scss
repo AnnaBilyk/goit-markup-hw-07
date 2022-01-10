@@ -1,0 +1,40 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $main-cl;
+    width: 528px;
+    padding: 40px;
+    box-shadow: $card-shadow;
+    border-radius: $radius-soft-corner;
+}
+
+.modal__title {
+    @include custom-text(20px, bold, 23px, $main-txt-cl, center);
+    letter-spacing: 0.03em;
+}
+
+
+.close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    @include with-border(1px, $icon-cl);
+    @include btn-rounded(30px, $main-cl);
+    padding: 6px;
+}
+
+.close-button_img {
+    @extend %animation;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    .close-button:focus &,
+    .close-button:hover & {
+        fill: $accent-cl;
+    }
+}

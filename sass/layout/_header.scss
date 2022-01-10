@@ -1,0 +1,15 @@
+
+.header__container {
+    @include custom-flex-container(flex-start, center, row, nowrap);
+}
+
+.header__logo {
+    margin-right: 93px;
+}
+
+.nav {
+    margin-right: 305px;
+}
+
+
+

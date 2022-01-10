@@ -1,0 +1,10 @@
+.page-header{
+    border-bottom: 1px solid $border-cl;
+    width: 100%;
+//    position: sticky;
+    top: 0;
+    z-index: 1; 
+    background-color: $main-cl;
+    padding: 24px 0;
+}
+

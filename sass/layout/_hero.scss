@@ -1,0 +1,7 @@
+.hero__container {
+    @include custom-flex-container(center, center, column, nowrap);
+}
+
+.hero__title {
+    margin-bottom: 30px;
+}

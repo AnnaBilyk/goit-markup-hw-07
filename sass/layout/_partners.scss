@@ -1,0 +1,5 @@
+
+.partners__list {
+    @include custom-flex-container(space-between, center, row, nowrap);
+}
+

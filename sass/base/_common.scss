@@ -1,0 +1,16 @@
+body {
+    font-family: $page-txt-style;
+    position: relative;
+}
+
+main {
+    position: inherit;
+}
+
+img {
+    display: block;
+}
+
+a{
+    @extend %animation;
+}

@@ -1,0 +1,24 @@
+.contacts{
+    @include custom-flex-container(space-between, center, row, nowrap);
+    @include custom-text( 14px, 500, 16px, $second-txt-cl, center);
+}
+
+
+.contacts__item {
+    @include custom-flex-container(space-between, center, row, nowrap);
+    &:first-child {
+        margin-right: 30px;
+    }
+
+}
+
+.contacts__link {
+    display: flex;
+    color: inherit;
+    fill:  $second-txt-cl;
+    @extend %active-link;
+}
+
+.contacts__icon{
+margin-right: 10px;
+}

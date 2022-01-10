@@ -1,0 +1,16 @@
+.hero {
+    @include bg-contain($hero-overlay, '../images/hero-img.jpg', center, cover);
+    padding: 200px 0;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.hero__container {
+    text-transform: uppercase;
+    padding: 0 $hor-padd;
+}
+
+
+.hero__title {
+    @include custom-text(44px, 900, 60px, $main-cl, center);
+}

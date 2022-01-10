@@ -1,0 +1,18 @@
+.link-icon__link {
+    @include custom-flex-container(center, center, row, nowrap); 
+    color: $icon-cl;
+    @include with-border(1px, $icon-cl);
+    border-radius: $radius-soft-corner;
+    &:hover,
+    &:focus {
+        @include with-border(1px, $accent-cl);
+        color: $accent-cl;
+    }
+}
+
+.link-icon__icon {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    fill: currentColor;
+}

@@ -1,0 +1,8 @@
+
+.features{
+    padding: $vert-padd 0 0;
+}
+
+.features__list {
+    @include custom-flex-container(space-between, flex-start, row, nowrap);
+}
